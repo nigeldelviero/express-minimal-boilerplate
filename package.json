@@ -4,15 +4,16 @@
   "description": "Express.js minimal boilerplate",
   "scripts": {
     "dev": "dotenvx run -- nodemon --exec \"swc src --out-dir dist --strip-leading-paths && node dist/server.js\"",
-    "build": "swc src --out-dir dist --strip-leading-paths",
+    "build": "rimraf dist && swc src --out-dir dist --strip-leading-paths",
     "start": "dotenvx run -- node dist/server.js",
     "prepare": "husky",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit"
   },
+  "type": "module",
   "keywords": [],
   "author": "nigeldelviero (delvieronigel@gmail.com)",
   "license": "MIT",
@@ -49,6 +50,7 @@
     "lint-staged": "^16.1.5",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.40.0"
   }
