@@ -1,7 +1,7 @@
 {
   "name": "express-minimal-boilerplate",
   "version": "0.1.0",
-  "description": "",
+  "description": "Express.js minimal boilerplate",
   "scripts": {
     "dev": "dotenvx run -- nodemon --exec \"swc src --out-dir dist --strip-leading-paths && node dist/server.js\"",
     "build": "swc src --out-dir dist --strip-leading-paths",
