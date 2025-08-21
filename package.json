@@ -7,10 +7,10 @@
     "build": "rimraf dist && swc src --out-dir dist --strip-leading-paths",
     "start": "dotenvx run -- node dist/server.js",
     "prepare": "husky",
-    "lint": "eslint \"src/**/*.ts\"",
-    "lint:fix": "eslint \"src/**/*.ts\" --fix",
-    "format": "prettier \"src/**/*.ts\" --write .",
-    "format:check": "prettier \"src/**/*.ts\" --check .",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier \"src/**/*.ts\" --write",
+    "format:check": "prettier \"src/**/*.ts\" --check",
     "typecheck": "tsc --noEmit"
   },
   "type": "module",
@@ -20,7 +20,7 @@
   "lint-staged": {
     "src/**/*.ts": [
       "eslint --fix",
-      "prettier --write"
+      "prettier \"src/**/*.ts\" --write"
     ]
   },
   "engines": {

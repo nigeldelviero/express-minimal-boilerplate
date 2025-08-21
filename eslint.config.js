@@ -1,11 +1,19 @@
 import tseslint from 'typescript-eslint';
 import tseslintPlugin from '@typescript-eslint/eslint-plugin';
-import prettier from 'prettier';
+import prettierPlugin from 'eslint-plugin-prettier';
 
 export default tseslint.config({
+  ignores: ['dist', 'node_modules'],
+  files: ['src/**/*.ts'],
+  languageOptions: {
+    parser: tseslint.parser,
+    parserOptions: {
+      project: './tsconfig.json',
+    },
+  },
   plugins: {
     '@typescript-eslint': tseslintPlugin,
-    prettier: prettier,
+    prettier: prettierPlugin,
   },
   rules: {
     'prettier/prettier': 'error',
