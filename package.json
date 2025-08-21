@@ -9,8 +9,8 @@
     "prepare": "husky",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "prettier \"src/**/*.ts\" --write .",
+    "format:check": "prettier \"src/**/*.ts\" --check .",
     "typecheck": "tsc --noEmit"
   },
   "type": "module",
