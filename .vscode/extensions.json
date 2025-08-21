@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint", // ESLint linting
+    "esbenp.prettier-vscode", // Prettier formatting
+    "streetsidesoftware.code-spell-checker", // Spell checker (opsional)
+    "visualstudioexptteam.vscodeintellicode", // IntelliCode
+    "eamodio.gitlens", // Git history & insights
+    "gruntfuggly.todo-tree" // TODO comments
+  ]
+}

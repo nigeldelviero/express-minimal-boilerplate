@@ -18,7 +18,6 @@ yarn-error.log*
 Thumbs.db
 
 # Editor settings
-.vscode/
 .idea/
 
 # Environment variables (if any)
@@ -33,9 +32,6 @@ Thumbs.db
 
 # Coverage reports (if you use coverage tools later)
 coverage/
-
-# ESLint cache
-.eslintcache
 
 # DB
 *.sqlite
