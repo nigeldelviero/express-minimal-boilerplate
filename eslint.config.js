@@ -8,7 +8,7 @@ export default tseslint.config({
     prettier: prettier,
   },
   rules: {
-    'prettier/prettier': 'error',
+    prettier: 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
   },
