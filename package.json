@@ -17,11 +17,8 @@
   "author": "nigeldelviero (delvieronigel@gmail.com)",
   "license": "MIT",
   "lint-staged": {
-    "*.ts": [
+    "src/**/*.ts": [
       "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,yml,yaml}": [
       "prettier --write"
     ]
   },
